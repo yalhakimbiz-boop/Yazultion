@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design | Yazultion</title>
+    <meta name="description" content="Software Design details">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-header {
+            padding-top: 150px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .detail-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 2rem 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .detail-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-content h3 {
+            color: var(--text-primary);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            font-family: var(--font-heading);
+        }
+
+        .detail-tags {
+            justify-content: center;
+            margin-bottom: 3rem;
+            margin-top: 1.5rem;
+        }
+
+        .detail-tags span {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Y<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Content -->
+    <section class="detail-header fade-in">
+        <div class="card-icon detail-icon" style="color: var(--accent-2); box-shadow: 0 0 40px rgba(112, 0, 255, 0.2);">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+        </div>
+        <h1 class="name" style="font-size: clamp(3rem, 6vw, 4.5rem);">Software <span class="gradient-text"
+                style="background: linear-gradient(135deg, var(--accent-2), var(--accent-3)); -webkit-background-clip: text;">Design</span>
+        </h1>
+
+        <div class="tech-tags detail-tags">
+            <span>Architecture</span>
+            <span>APIs</span>
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>Algorithms</span>
+            <span>Patterns</span>
+        </div>
+
+        <div class="detail-content">
+            <p>
+                Great software is not just about writing code that works; it's about solving complex problems through
+                elegant, scalable, and modular architectures. My software design principles are rooted in clean code
+                practices, maintainability, and robust performance under load.
+            </p>
+            <h3>What I Do</h3>
+            <p>
+                I specialize in designing backend infrastructures, developing RESTful and GraphQL APIs, and creating
+                scalable microservices. From high-throughput financial systems to real-time communication platforms, I
+                architect software solutions that can grow alongside the business. I utilize a range of programming
+                languages depending on the task—from fast execution in C++ to rapid development in Python and robust
+                enterprise systems in Java.
+            </p>
+            <h3>My Approach</h3>
+            <p>
+                A well-designed system minimizes technical debt. I strictly adhere to SOLID principles and
+                industry-standard design patterns (like MVC, Strategy, and Observer). Security, edge-case handling, and
+                thorough automated testing are built into my CI/CD pipelines to ensure the highest code quality before
+                it ever reaches production.
+            </p>
+        </div>
+
+        <a href="index.html#expertise" class="btn btn-secondary" style="margin-top: 2rem; margin-bottom: 5rem;">&larr;
+            Back to Expertise</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer"
+        style="padding: 2rem 0; border-top: 1px solid var(--surface-border); text-align: center; color: var(--text-secondary);">
+        <p>&copy; <span id="current-year"></span> Yazultion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

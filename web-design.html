@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | Yazultion</title>
+    <meta name="description" content="Web Design details">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png">
+    <style>
+        .detail-header {
+            padding-top: 150px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .detail-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 2rem 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .detail-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-content h3 {
+            color: var(--text-primary);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            font-family: var(--font-heading);
+        }
+
+        .detail-tags {
+            justify-content: center;
+            margin-bottom: 3rem;
+            margin-top: 1.5rem;
+        }
+
+        .detail-tags span {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png" alt="Yazultion" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Content -->
+    <section class="detail-header fade-in">
+        <div class="card-icon detail-icon" style="color: var(--accent-1); box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+        </div>
+        <h1 class="name" style="font-size: clamp(3rem, 6vw, 4.5rem);">Web <span class="gradient-text">Design</span></h1>
+
+        <div class="tech-tags detail-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Tailwind</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Vue</span>
+            <span>Next.js</span>
+            <span>Figma</span>
+        </div>
+
+        <div class="detail-content">
+            <p>
+                In the modern digital landscape, a website is more than just a digital brochure—it's an interactive
+                experience. My web design philosophy revolves around user-centric methodologies, ensuring that every
+                interface is not only visually stunning but also highly intuitive and accessible.
+            </p>
+            <h3>What I Do</h3>
+            <p>
+                From wireframing and prototyping to full-stack development, I build web ecosystems that captivate users.
+                I leverage the latest CSS properties, dynamic JavaScript animations, and robust frameworks like React
+                and Vue to bring static designs to life. Whether it's a sleek landing page or a complex web application,
+                I ensure cross-browser compatibility, responsive fluid layouts, and top-tier performance scores.
+            </p>
+            <h3>My Approach</h3>
+            <p>
+                I start with a mobile-first mindset, working my way up to larger screens to guarantee a seamless
+                experience across all devices. Performance is a key metric; I optimize assets, utilize modern image
+                formats, and implement lazy loading to keep loading times under a second. The goal is always to merge
+                striking aesthetics with flawless functionality.
+            </p>
+        </div>
+
+        <a href="index.html#expertise" class="btn btn-secondary" style="margin-top: 2rem; margin-bottom: 5rem;">&larr;
+            Back to Expertise</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer"
+        style="padding: 2rem 0; border-top: 1px solid var(--surface-border); text-align: center; color: var(--text-secondary);">
+        <p>&copy; <span id="current-year"></span> Yazultion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

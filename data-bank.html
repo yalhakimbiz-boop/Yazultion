@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bank (SQL) | Yazultion</title>
+    <meta name="description" content="Data Bank SQL details">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png">
+    <style>
+        .detail-header {
+            padding-top: 150px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .detail-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 2rem 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .detail-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-content h3 {
+            color: var(--text-primary);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            font-family: var(--font-heading);
+        }
+
+        .detail-tags {
+            justify-content: center;
+            margin-bottom: 3rem;
+            margin-top: 1.5rem;
+        }
+
+        .detail-tags span {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png" alt="Yazultion" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Content -->
+    <section class="detail-header fade-in">
+        <div class="card-icon detail-icon" style="color: #00ff88; box-shadow: 0 0 40px rgba(0, 255, 136, 0.2);">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+        </div>
+        <h1 class="name" style="font-size: clamp(3rem, 6vw, 4.5rem);">Data Bank <span class="gradient-text"
+                style="background: linear-gradient(135deg, #00ff88, #00b8ff); -webkit-background-clip: text;">(SQL)</span>
+        </h1>
+
+        <div class="tech-tags detail-tags">
+            <span>SQL</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Database Design</span>
+            <span>Optimization</span>
+            <span>NoSQL</span>
+            <span>Redis</span>
+            <span>ETL</span>
+        </div>
+
+        <div class="detail-content">
+            <p>
+                In the modern era, data is the most valuable commodity. A slow, poorly structured database can cripple
+                an application, no matter how beautiful the frontend might look. My expertise with SQL and relational
+                data models ensures that information is securely stored, rapidly retrieved, and mathematically sound.
+            </p>
+            <h3>What I Do</h3>
+            <p>
+                I design highly normalized schemas to preserve data integrity and denormalize strategically when query
+                performance becomes the priority. My tasks often involve writing complex multi-table joins, establishing
+                sophisticated indexing patterns, writing stored procedures, and handling intricate data migrations.
+                Beyond SQL databases like PostgreSQL and MySQL, I integrate caching mechanisms using Redis to minimize
+                direct database stress on heavy read-loads.
+            </p>
+            <h3>My Approach</h3>
+            <p>
+                Security and scale are paramount. I enforce stringent access controls and parameterized querying to
+                prevent injection attacks out-of-the-box. When planning a data architecture, I always anticipate future
+                growth—ensuring indexing structures and sharding strategies are viable long before table sizes balloon
+                into the millions of rows, preventing disastrous performance bottlenecks down the line.
+            </p>
+        </div>
+
+        <a href="index.html#expertise" class="btn btn-secondary" style="margin-top: 2rem; margin-bottom: 5rem;">&larr;
+            Back to Expertise</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer"
+        style="padding: 2rem 0; border-top: 1px solid var(--surface-border); text-align: center; color: var(--text-secondary);">
+        <p>&copy; <span id="current-year"></span> Yazultion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

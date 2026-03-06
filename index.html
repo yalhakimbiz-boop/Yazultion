@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazultion | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Yazultion - Web Design, Software Design, Game Content, Data Bank (SQL)">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Sophisticated%20Cyan%20'Y'%20Logo%20Design.png" alt="Yazultion" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Yazultion</h1>
+            <h2 class="role">Multidisciplinary <span class="gradient-text">Creator</span></h2>
+            <p class="bio">
+                Bridging the gap between engineering and imagination.
+                I specialize in crafting immersive web experiences, robust software architectures,
+                engaging game content, and efficient data solutions.
+            </p>
+            <div class="hero-cta">
+                <a href="#expertise" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Geometric/Abstract representation of skills -->
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="face front">Web</div>
+                    <div class="face back">SQL</div>
+                    <div class="face right">Soft</div>
+                    <div class="face left">Game</div>
+                    <div class="face top">Code</div>
+                    <div class="face bottom">Data</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Skills Section -->
+    <section id="expertise" class="skills-section fade-in">
+        <div class="section-header">
+            <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+            <p class="section-subtitle">Bridging different domains to create comprehensive solutions.</p>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Web Design -->
+            <a href="web-design.html" class="skill-card hover-glow" style="text-decoration: none;"
+                data-color="var(--accent-1)">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <h3>Web Design</h3>
+                <p>Creating highly interactive, responsive, and visually stunning web applications with modern styling
+                    and frameworks.</p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3/Tailwind</span>
+                    <span>JavaScript</span>
+                    <span>React/Vue</span>
+                </div>
+            </a>
+
+            <!-- Software Design -->
+            <a href="software-design.html" class="skill-card hover-glow" style="text-decoration: none;"
+                data-color="var(--accent-2)">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                        <rect x="9" y="9" width="6" height="6"></rect>
+                        <line x1="9" y1="1" x2="9" y2="4"></line>
+                        <line x1="15" y1="1" x2="15" y2="4"></line>
+                        <line x1="9" y1="20" x2="9" y2="23"></line>
+                        <line x1="15" y1="20" x2="15" y2="23"></line>
+                        <line x1="20" y1="9" x2="23" y2="9"></line>
+                        <line x1="20" y1="14" x2="23" y2="14"></line>
+                        <line x1="1" y1="9" x2="4" y2="9"></line>
+                        <line x1="1" y1="14" x2="4" y2="14"></line>
+                    </svg>
+                </div>
+                <h3>Software Design</h3>
+                <p>Architecting scalable and maintainable software systems. Focusing on clean code, design patterns, and
+                    system performance.</p>
+                <div class="tech-tags">
+                    <span>Architecture</span>
+                    <span>APIs</span>
+                    <span>Algorithms</span>
+                    <span>Patterns</span>
+                </div>
+            </a>
+
+            <!-- Game Content -->
+            <a href="game-content.html" class="skill-card hover-glow" style="text-decoration: none;"
+                data-color="var(--accent-3)">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="12" x2="10" y2="12"></line>
+                        <line x1="8" y1="10" x2="8" y2="14"></line>
+                        <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                        <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                        <path
+                            d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>Game Content</h3>
+                <p>Designing immersive gameplay mechanics, compelling narratives, and engaging game assets that bring
+                    worlds to life.</p>
+                <div class="tech-tags">
+                    <span>Level Design</span>
+                    <span>Mechanics</span>
+                    <span>3D Assets</span>
+                    <span>Engines</span>
+                </div>
+            </a>
+
+            <!-- Data Bank (SQL) -->
+            <a href="data-bank.html" class="skill-card hover-glow" style="text-decoration: none;" data-color="#00ff88">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                </div>
+                <h3>Data Bank (SQL)</h3>
+                <p>Structuring and optimizing relational databases. Designing complex queries and ensuring data
+                    integrity and fast retrieval.</p>
+                <div class="tech-tags">
+                    <span>SQL</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>Optimization</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact-section fade-in">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p>Have a project in mind, or just want to chat about web design, games, or data sets? Feel free to
+                    reach out. I'm always open to discussing new projects, creative ideas, or opportunities to be part
+                    of your vision.</p>
+                <a href="mailto:yalhakim.biz@gmail.com" class="btn btn-primary contact-btn">Send an Email</a>
+            </div>
+
+            <div class="business-email-box"
+                style="margin-top: 1rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 12px; display: inline-flex; align-items: center; gap: 1rem; transition: all 0.3s ease;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div style="text-align: left;">
+                    <div
+                        style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 500;">
+                        Business Inquiries</div>
+                    <a href="mailto:yalhakim.biz@gmail.com"
+                        style="color: var(--text-primary); text-decoration: none; font-size: 1.25rem; font-family: var(--font-heading); font-weight: 600; display: block; margin-top: 0.2rem;">yalhakim.biz@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> Yazultion. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <!-- Core Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
