@@ -6,7 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect Logic
     const typingText = document.querySelector('.typing-text');
     if (typingText) {
-        const words = ['Creator', 'Developer', 'Designer', 'Engineer'];
+        const words = [
+            'Web Designer',
+            'Software Developer',
+            'Game Creator',
+            'Data Specialist',
+            'Multidisciplinary Creator'
+        ];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -52,41 +58,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for scroll animations (fade-in)
+    // Navigation Highlight Logic
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+
+    function highlightNav() {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 100;
+            const sectionId = current.getAttribute('id');
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Scroll Observer for Fade-In
     const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: stop observing once animated
-                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe all elements with .fade-in class
     document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
+        scrollObserver.observe(el);
     });
 
-    // Card Glow Effect on Hover
-    document.querySelectorAll('.hover-glow').forEach(card => {
-        card.addEventListener('mousemove', e => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+    window.addEventListener('scroll', highlightNav);
 
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
-        });
-    });
-
-    // Trigger initial hero animation immediately
+    // Initial Trigger for Hero
     setTimeout(() => {
         const hero = document.querySelector('.hero.fade-in');
         if (hero) hero.classList.add('visible');
