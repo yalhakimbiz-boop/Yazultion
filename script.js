@@ -1,5 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Custom cursor logic removed as per user request
+
+
+    // Typing Effect Logic
+    const typingText = document.querySelector('.typing-text');
+    if (typingText) {
+        const words = ['Creator', 'Developer', 'Designer', 'Engineer'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingDelay = 150;
+
+        function type() {
+            const currentWord = words[wordIndex];
+
+            if (isDeleting) {
+                typingText.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typingDelay = 50; // faster when deleting
+            } else {
+                typingText.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typingDelay = 150;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typingDelay = 1500; // Pause at the end of word
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typingDelay = 500; // Pause before typing next word
+            }
+
+            setTimeout(type, typingDelay);
+        }
+
+        // Start typing effect
+        setTimeout(type, 1000);
+    }
+
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
 

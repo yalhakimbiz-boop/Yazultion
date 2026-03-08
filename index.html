@@ -48,7 +48,8 @@
         <div class="hero-content">
             <p class="greeting">Hello, I'm</p>
             <h1 class="name">Yazultion</h1>
-            <h2 class="role">Multidisciplinary <span class="gradient-text">Creator</span></h2>
+            <h2 class="role">Multidisciplinary <br><span class="gradient-text typing-text"></span><span
+                    class="typing-cursor"></span></h2>
             <p class="bio">
                 Bridging the gap between engineering and imagination.
                 I specialize in crafting immersive web experiences, robust software architectures,
@@ -60,17 +61,59 @@
             </div>
         </div>
         <div class="hero-visual">
-            <!-- Geometric/Abstract representation of skills -->
-            <div class="cube-container">
-                <div class="cube">
-                    <div class="face front">Web</div>
-                    <div class="face back">SQL</div>
-                    <div class="face right">Soft</div>
-                    <div class="face left">Game</div>
-                    <div class="face top">Code</div>
-                    <div class="face bottom">Data</div>
+            <!-- Glassmorphism abstract representation -->
+            <div class="glass-composition">
+                <div class="glass-shape shape-1"></div>
+                <div class="glass-shape shape-2"></div>
+                <div class="glass-shape shape-3"></div>
+
+                <div class="glass-main-card">
+                    <div class="glass-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="code-lines">
+                        <div class="line w-70"></div>
+                        <div class="line w-50"></div>
+                        <div class="line w-90"></div>
+                        <div class="line w-40"></div>
+                        <div class="line w-80"></div>
+                        <div class="line w-60"></div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#expertise" class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+    </section>
+
+    <!-- AI Usage Statement -->
+    <section class="ai-statement-section fade-in">
+        <div class="ai-statement-card">
+            <div class="ai-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                    <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+            </div>
+            <p class="ai-text">
+                I use AI tools in my work to help me move faster and deliver better results. But every project you see
+                here has been personally guided, checked, and shaped by me from start to finish. AI helps me work
+                smarter — the ideas, decisions, and responsibility are always mine.
+            </p>
         </div>
     </section>
 
@@ -84,7 +127,7 @@
         <div class="skills-grid">
             <!-- Web Design -->
             <a href="web-design.html" class="skill-card hover-glow" style="text-decoration: none;"
-                data-color="var(--accent-1)">
+                data-color="var(--accent-1)" aria-label="Web Design Expertise">
                 <div class="card-icon">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -98,17 +141,11 @@
                 <h3>Web Design</h3>
                 <p>Creating highly interactive, responsive, and visually stunning web applications with modern styling
                     and frameworks.</p>
-                <div class="tech-tags">
-                    <span>HTML5</span>
-                    <span>CSS3/Tailwind</span>
-                    <span>JavaScript</span>
-                    <span>React/Vue</span>
-                </div>
             </a>
 
             <!-- Software Design -->
             <a href="software-design.html" class="skill-card hover-glow" style="text-decoration: none;"
-                data-color="var(--accent-2)">
+                data-color="var(--accent-2)" aria-label="Software Design Expertise">
                 <div class="card-icon">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -127,17 +164,11 @@
                 <h3>Software Design</h3>
                 <p>Architecting scalable and maintainable software systems. Focusing on clean code, design patterns, and
                     system performance.</p>
-                <div class="tech-tags">
-                    <span>Architecture</span>
-                    <span>APIs</span>
-                    <span>Algorithms</span>
-                    <span>Patterns</span>
-                </div>
             </a>
 
             <!-- Game Content -->
             <a href="game-content.html" class="skill-card hover-glow" style="text-decoration: none;"
-                data-color="var(--accent-3)">
+                data-color="var(--accent-3)" aria-label="Game Content Expertise">
                 <div class="card-icon">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -153,16 +184,11 @@
                 <h3>Game Content</h3>
                 <p>Designing immersive gameplay mechanics, compelling narratives, and engaging game assets that bring
                     worlds to life.</p>
-                <div class="tech-tags">
-                    <span>Level Design</span>
-                    <span>Mechanics</span>
-                    <span>3D Assets</span>
-                    <span>Engines</span>
-                </div>
             </a>
 
             <!-- Data Bank (SQL) -->
-            <a href="data-bank.html" class="skill-card hover-glow" style="text-decoration: none;" data-color="#00ff88">
+            <a href="data-bank.html" class="skill-card hover-glow" style="text-decoration: none;" data-color="#00ff88"
+                aria-label="Data Bank SQL Expertise">
                 <div class="card-icon">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -174,12 +200,6 @@
                 <h3>Data Bank (SQL)</h3>
                 <p>Structuring and optimizing relational databases. Designing complex queries and ensuring data
                     integrity and fast retrieval.</p>
-                <div class="tech-tags">
-                    <span>SQL</span>
-                    <span>PostgreSQL</span>
-                    <span>MySQL</span>
-                    <span>Optimization</span>
-                </div>
             </a>
         </div>
     </section>
